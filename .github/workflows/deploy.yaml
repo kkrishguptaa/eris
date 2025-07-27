@@ -7,6 +7,10 @@ on:
 
 jobs:
   build:
+    environment:
+      name: cloudflare-pages
+      url: ${{ steps.wrangler.outputs.deployment-url  }}
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,6 +30,7 @@ jobs:
 
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
+        id: wrangler
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
