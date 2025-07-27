@@ -9,7 +9,7 @@ jobs:
   build:
     environment:
       name: cloudflare-pages
-      url: ${{ steps.wrangler.outputs.deployment-url  }}
+      url: ${{ steps.wrangler.outputs.deployment-url && 'https://eris.krishg.com' }}
 
     runs-on: ubuntu-latest
     steps:
