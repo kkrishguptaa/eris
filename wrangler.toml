@@ -1,7 +1,13 @@
 name = "eris"
-build.command = "bun install --frozen-lockfile && bun run build"
-pages_build_output_dir = "dist"
-minify = true
+main = "dist/_worker.js"
+workers_dev = true
+preview_urls = true
+
+routes = [{ pattern = "eris.krishg.com", custom_domain = true }]
+
+[assets]
+html_handling = "drop-trailing-slash"
+not_found_handling = "404-page"
 
 [observability.logs]
 enabled = true
