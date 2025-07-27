@@ -1,17 +1,7 @@
 name = "eris"
+build.command = "bun run build"
+pages_build_output_dir = "dist"
+minify = true
 
-[env.production]
-name = "eris"
-
-[env.preview]
-name = "eris-preview"
-
-# Development configuration
-[dev]
-local_protocol = "http"
-upstream_protocol = "https"
-port = 5173
-
-# Environment variables (add your own as needed)
 [vars]
-# ENVIRONMENT = "production"
+BUN_VERSION = "1.2.17"
