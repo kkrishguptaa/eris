@@ -1,7 +1,5 @@
 name = "eris"
-build.command = "bun run build"
 pages_build_output_dir = "dist"
-minify = true
 
 [vars]
 BUN_VERSION = "1.2.17"
