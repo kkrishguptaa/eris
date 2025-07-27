@@ -1,4 +1,10 @@
 name = "eris"
+build.command = "bun install --frozen-lockfile && bun run build"
+pages_build_output_dir = "dist"
+minify = true
+
+[observability.logs]
+enabled = true
 
 [vars]
 BUN_VERSION = "1.2.17"
