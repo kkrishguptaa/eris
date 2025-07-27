@@ -1,19 +1,14 @@
+compatibility_flags = [
+  "nodejs_compat",
+  "nodejs_als",
+  "global_fetch_strictly_public",
+]
+compatibility_date = "2025-05-27"
+
 name = "eris"
-main = "dist/_worker.js"
 pages_build_output_dir = "dist"
-workers_dev = false
-preview_urls = false
 
-routes = [{ pattern = "eris.krishg.com", custom_domain = true }]
-
-compatibility_flags = ["nodejs_compat"]
-
-[assets]
-html_handling = "drop-trailing-slash"
-not_found_handling = "404-page"
-
-[observability.logs]
-enabled = true
+placement.mode = "smart"
 
 [vars]
 ORIGIN = "https://eris.krishg.com"

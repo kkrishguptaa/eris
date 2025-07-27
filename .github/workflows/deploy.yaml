@@ -1,0 +1,52 @@
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          ref: main
+      - uses: oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76 # v2
+        id: bun
+        with:
+          bun-version-file: "package.json"
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build
+        run: bun run build
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: "pages deploy"
+          environment: production
+          secrets: |
+            AUTH_SECRET
+            AUTH_GITHUB_ID
+            AUTH_GITHUB_SECRET
+            AUTH_DISCORD_ID
+            AUTH_DISCORD_SECRET
+        env:
+          #=======================================================================
+          # Auth
+          #=======================================================================
+
+          AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
+          AUTH_GITHUB_ID: ${{ secrets.AUTH_GITHUB_ID }}
+
+          AUTH_GITHUB_SECRET: ${{ secrets.AUTH_GITHUB_SECRET }}
+
+          AUTH_DISCORD_ID: ${{ secrets.AUTH_DISCORD_ID }}
+          AUTH_DISCORD_SECRET: ${{ secrets.AUTH_DISCORD_SECRET }}
