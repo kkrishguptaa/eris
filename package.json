@@ -6,7 +6,7 @@
     "@builder.io/qwik": "1.15.0",
     "@builder.io/qwik-city": "1.15.0",
     "@eslint/js": "latest",
-    "@prisma/client": "6.12.0",
+    "@prisma/client": "^6.12.0",
     "@tailwindcss/vite": "^4.1.11",
     "@types/node": "24.1.0",
     "eslint": "9.32.0",
@@ -43,14 +43,17 @@
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
-    "postinstall": "prisma generate",
+    "postinstall": "prisma generate --no-engine",
     "preview": "qwik build preview && vite preview --open",
-    "prisma:generate": "prisma generate",
+    "prisma:generate": "prisma generate --no-engine",
     "prisma:migrate": "prisma migrate dev",
     "prisma:migrate:prod": "prisma migrate deploy",
     "serve": "wrangler pages dev ./dist --compatibility-flags=nodejs_als",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@prisma/extension-accelerate": "^2.0.2"
+  }
 }
