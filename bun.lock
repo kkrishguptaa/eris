@@ -7,8 +7,8 @@
         "@prisma/extension-accelerate": "^2.0.2",
       },
       "devDependencies": {
-        "@auth/prisma-adapter": "2.10.0",
-        "@auth/qwik": "0.8.0",
+        "@auth/prisma-adapter": "2.11.0",
+        "@auth/qwik": "0.9.0",
         "@builder.io/qwik": "1.16.1",
         "@builder.io/qwik-city": "1.16.1",
         "@eslint/js": "latest",
@@ -35,11 +35,11 @@
   "packages": {
     "@adobe/css-tools": ["@adobe/css-tools@4.3.3", "", {}, "sha512-rE0Pygv0sEZ4vBWHlAgJLGDU7Pm8xoO6p3wsEceb7GYAjScrOHpEo8KK/eVkAcnSM+slAEtXjA2JpdjLp4fJQQ=="],
 
-    "@auth/core": ["@auth/core@0.40.0", "", { "dependencies": { "@panva/hkdf": "^1.2.1", "jose": "^6.0.6", "oauth4webapi": "^3.3.0", "preact": "10.24.3", "preact-render-to-string": "6.5.11" }, "peerDependencies": { "@simplewebauthn/browser": "^9.0.1", "@simplewebauthn/server": "^9.0.2", "nodemailer": "^6.8.0" }, "optionalPeers": ["@simplewebauthn/browser", "@simplewebauthn/server", "nodemailer"] }, "sha512-n53uJE0RH5SqZ7N1xZoMKekbHfQgjd0sAEyUbE+IYJnmuQkbvuZnXItCU7d+i7Fj8VGOgqvNO7Mw4YfBTlZeQw=="],
+    "@auth/core": ["@auth/core@0.41.0", "", { "dependencies": { "@panva/hkdf": "^1.2.1", "jose": "^6.0.6", "oauth4webapi": "^3.3.0", "preact": "10.24.3", "preact-render-to-string": "6.5.11" }, "peerDependencies": { "@simplewebauthn/browser": "^9.0.1", "@simplewebauthn/server": "^9.0.2", "nodemailer": "^6.8.0" }, "optionalPeers": ["@simplewebauthn/browser", "@simplewebauthn/server", "nodemailer"] }, "sha512-Wd7mHPQ/8zy6Qj7f4T46vg3aoor8fskJm6g2Zyj064oQ3+p0xNZXAV60ww0hY+MbTesfu29kK14Zk5d5JTazXQ=="],
 
-    "@auth/prisma-adapter": ["@auth/prisma-adapter@2.10.0", "", { "dependencies": { "@auth/core": "0.40.0" }, "peerDependencies": { "@prisma/client": ">=2.26.0 || >=3 || >=4 || >=5 || >=6" } }, "sha512-EliOQoTjGK87jWWqnJvlQjbR4PjQZQqtwRwPAe108WwT9ubuuJJIrL68aNnQr4hFESz6P7SEX2bZy+y2yL37Gw=="],
+    "@auth/prisma-adapter": ["@auth/prisma-adapter@2.11.0", "", { "dependencies": { "@auth/core": "0.41.0" }, "peerDependencies": { "@prisma/client": ">=2.26.0 || >=3 || >=4 || >=5 || >=6" } }, "sha512-gp1vpO7R7HxqQIDVFG4FXpjd9WsXg+vZsaqXOYyNCWugcx0scU2XNfhEiw3FnGyIaqRD4fexBf40LMJH8HmZ8A=="],
 
-    "@auth/qwik": ["@auth/qwik@0.8.0", "", { "dependencies": { "@auth/core": "0.40.0", "set-cookie-parser": "^2.6.0" } }, "sha512-zYFZvdyVwG+o8PIi1OWD9i4qSLP/xq/0Hl1P6XbCG7GUOPwsmf0TRJYoICzGSp66m7fVSBaLFdPfGXOJeHzO6w=="],
+    "@auth/qwik": ["@auth/qwik@0.9.0", "", { "dependencies": { "@auth/core": "0.41.0", "set-cookie-parser": "^2.6.0" } }, "sha512-Y/n3gIXzaL6jjN1HsPZKvblHqBTqNGRqCkA+aFpKkbKpW2rkRdG3mWG1uV+OQ4J8oJfn3OZCkPz4aiYFtnpPdw=="],
 
     "@builder.io/qwik": ["@builder.io/qwik@1.16.1", "", { "dependencies": { "csstype": "^3.1.3", "rollup": ">= ^4.39.0" }, "peerDependencies": { "vite": ">=5 <8" }, "bin": { "qwik": "qwik-cli.cjs" } }, "sha512-BL2pM9OxtYm9niye5xBir/Rrosi2itK0odkt9E9oGU8ohaZMgz+nNyPmtvAcwdlo+GTEbqUYAUVG9A/zUYEfCw=="],
 
