@@ -6,7 +6,7 @@
     "@builder.io/qwik": "1.16.1",
     "@builder.io/qwik-city": "1.16.1",
     "@eslint/js": "latest",
-    "@prisma/client": "6.16.3",
+    "@prisma/client": "6.17.0",
     "@tailwindcss/vite": "4.1.14",
     "@types/node": "24.7.0",
     "eslint": "9.37.0",
@@ -14,7 +14,7 @@
     "globals": "16.4.0",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.6.14",
-    "prisma": "6.16.3",
+    "prisma": "6.17.0",
     "tailwindcss": "4.1.14",
     "typescript": "5.9.3",
     "typescript-eslint": "8.46.0",
@@ -22,7 +22,7 @@
     "undici": "7.16.0",
     "vite": "7.1.9",
     "vite-tsconfig-paths": "5.1.4",
-    "wrangler": "4.42.0"
+    "wrangler": "4.42.1"
   },
   "description": "Blank project with routing included",
   "engines": {
