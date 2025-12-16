@@ -9,7 +9,7 @@
     "@prisma/client": "6.19.0",
     "@tailwindcss/vite": "4.1.18",
     "@types/node": "24.10.2",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-plugin-qwik": "1.17.2",
     "globals": "16.5.0",
     "prettier": "3.7.4",
