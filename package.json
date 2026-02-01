@@ -22,7 +22,7 @@
     "undici": "7.19.2",
     "vite": "7.3.1",
     "vite-tsconfig-paths": "5.1.4",
-    "wrangler": "4.61.0"
+    "wrangler": "4.61.1"
   },
   "description": "Blank project with routing included",
   "engines": {
